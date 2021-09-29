@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { Space, Row, Col, Table, Tag } from "antd";
 
 const columns = [
@@ -10,7 +10,7 @@ const columns = [
     sorter: (a, b) => a.name.localeCompare(b.name),
     sortDirections: ["descend", "ascend"],
     render: (name, record) => {
-      return <Link to={`/college/id/${record._id}`}>{name}</Link>;
+      return <a href={`/college/id/${record._id}`}>{name}</a>;
     },
   },
   {
