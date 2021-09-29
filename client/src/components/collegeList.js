@@ -10,7 +10,7 @@ const columns = [
     sorter: (a, b) => a.name.localeCompare(b.name),
     sortDirections: ["descend", "ascend"],
     render: (name, record) => {
-      return <Link href={`/college/id/${record._id}`}>{name}</Link>;
+      return <Link to={`/college/id/${record._id}`}>{name}</Link>;
     },
   },
   {

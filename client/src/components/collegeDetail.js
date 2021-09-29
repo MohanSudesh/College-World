@@ -13,7 +13,7 @@ const CollegeDetail = () => {
       .then((res) => res.json())
       .then((data) => setCollegeData(data[0]))
       .then((t) => setCollegeDataLoading(false));
-  }, []);
+  }, [collegeData]);
 
   const loading = (
     <div>
